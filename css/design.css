@@ -1,0 +1,118 @@
+body {
+    font-family: "Outfit", serif;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.qr .container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+.qr {
+    background-color: hsl(212, 45%, 89%);
+    height: 100vh;
+}
+
+.qr .container {
+    position: relative;
+    height: 100%;
+}
+
+.qr .container .content {
+    background-color: white;
+    text-align: center;
+    width: 320px;
+    height: 499px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.qr .container .content img {
+    width: 288px;
+    height: 288px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    margin-top: 16px;
+}
+
+.qr .container .content .text {
+    width: 288px;
+    height: 131px;
+    margin: auto;
+    padding-right: 16px;
+    padding-left: 16px;
+}
+
+.qr .container .content .text p.bold {
+    font-size: 22px;
+    line-height: 1.2;
+    letter-spacing: 0;
+    font-weight: bold;
+    color: hsl(218, 44%, 22%);
+    margin: 0;
+    margin-bottom: 16px;
+    margin-top: 24px;
+}
+
+.qr .container .content .text p.normal {
+    font-size: 15px;
+    line-height: 1.4;
+    letter-spacing: 0.2;
+    font-weight: regular;
+    color: hsl(216, 15%, 48%);
+    margin: 0;
+}
+
+.qr .container .attribution {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+    -webkit-transform: translatex(-50%);
+    -moz-transform: translatex(-50%);
+    -ms-transform: translatex(-50%);
+    -o-transform: translatex(-50%);
+    bottom: 0;
+    padding: 20px 0;
+    min-width: 300px;
+}
+
+.qr .container .attribution a {
+    text-decoration: none;
+    color: hsl(218, 44%, 22%);
+}
